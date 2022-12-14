@@ -43,8 +43,8 @@ modules:
       - --with-pic
     sources:
       - type: archive
-        url: https://www.mpfr.org/mpfr-current/mpfr-4.1.0.tar.xz
-        sha256: 0c98a3f1732ff6ca4ea690552079da9c597872d30e96ec28414ee23c95558a7f
+        url: https://www.mpfr.org/mpfr-current/mpfr-4.1.1.tar.xz
+        sha256: ffd195bd567dbaffc3b98b23fd00aad0537680c9896171e44fe3ff79e28ac33d
         x-checker-data:
           type: anitya
           project-id: 2019
@@ -58,8 +58,8 @@ modules:
       - ./b2 install link=static runtime-link=static cxxflags="-fPIC" -j $FLATPAK_BUILDER_N_JOBS
     sources:
       - type: archive
-        url: https://boostorg.jfrog.io/artifactory/main/release/1.80.0/source/boost_1_80_0.tar.bz2
-        sha256: 1e19565d82e43bc59209a168f5ac899d3ba471d55c7610c677d4ccf2c9c500c0
+        url: https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.tar.bz2
+        sha256: 71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa
         x-checker-data:
           type: anitya
           project-id: 6845
@@ -74,8 +74,8 @@ modules:
       - -DCGAL_HEADER_ONLY=ON
     sources:
       - type: archive
-        url: https://github.com/CGAL/cgal/releases/download/v5.5/CGAL-5.5.tar.xz
-        sha256: 98ac395ca08aacf38b7a8170a822b650aedf10355df41dd0e4bfb238408e08a6
+        url: https://github.com/CGAL/cgal/releases/download/v5.5.1/CGAL-5.5.1.tar.xz
+        sha256: 091630def028facdcaf00eb5b68ad79eddac1b855cca6e87eef18a031566edfc
         x-checker-data:
           type: anitya
           project-id: 273

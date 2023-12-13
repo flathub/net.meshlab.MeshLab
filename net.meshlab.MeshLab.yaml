@@ -131,8 +131,6 @@ modules:
 
   - name: MeshLab
     buildsystem: cmake-ninja
-    config-opts:
-      - -DCMAKE_BUILD_TYPE:STRING=MinSizeRel
     subdir: src
     sources:
       - type: git

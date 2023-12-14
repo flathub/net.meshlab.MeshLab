@@ -57,8 +57,8 @@ modules:
       - ./b2 install link=static runtime-link=static cxxflags="-fPIC" -j $FLATPAK_BUILDER_N_JOBS
     sources:
       - type: archive
-        url: https://boostorg.jfrog.io/artifactory/main/release/1.83.0/source/boost_1_83_0.tar.bz2
-        sha256: 6478edfe2f3305127cffe8caf73ea0176c53769f4bf1585be237eb30798c3b8e
+        url: https://boostorg.jfrog.io/artifactory/main/release/1.84.0/source/boost_1_84_0.tar.bz2
+        sha256: cc4b893acf645c9d4b698e9a0f08ca8846aa5d6c68275c14c3e7949c24109454
         x-checker-data:
           type: anitya
           project-id: 6845
@@ -137,8 +137,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/cnr-isti-vclab/meshlab.git
-        tag: MeshLab-2022.02
-        commit: 58731df6d68e4edeb45d36e7c8828a9d46f8799a
+        tag: MeshLab-2023.12
+        commit: 2dbd2f4b12df3b47d8777b2b4a43cabd9e425735
         x-checker-data:
           type: git
           tag-pattern: ^(MeshLab-[\d.]+)$

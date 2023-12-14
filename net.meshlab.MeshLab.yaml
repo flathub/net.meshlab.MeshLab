@@ -129,6 +129,22 @@ modules:
           stable-only: true
           url-template: https://ftp.gnu.org/gnu/gmp/gmp-$version.tar.xz
 
+  - name: VCGlib
+    buildsystem: cmake
+    builddir: true
+    sources:
+      - type: git
+        url: https://github.com/cnr-isti-vclab/vcglib
+        tag: 2023.12
+
+  - name: Nexus
+    buildsystem: cmake-ninja
+    builddir: true
+    sources:
+      - type: git
+        url: https://github.com/cnr-isti-vclab/nexus
+        commit: 9861a995aa7010043b85f8d53272a266f7d317a7
+
   - name: MeshLab
     buildsystem: cmake-ninja
     config-opts:
@@ -137,8 +153,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/cnr-isti-vclab/meshlab.git
-        tag: MeshLab-2022.02
-        commit: 58731df6d68e4edeb45d36e7c8828a9d46f8799a
+        tag: MeshLab-2023.12
+        commit: 2dbd2f4b12df3b47d8777b2b4a43cabd9e425735
         x-checker-data:
           type: git
           tag-pattern: ^(MeshLab-[\d.]+)$

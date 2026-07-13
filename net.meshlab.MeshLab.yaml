@@ -57,8 +57,8 @@ modules:
       - /bin
     sources:
       - type: archive
-        url: https://github.com/CGAL/cgal/releases/download/v6.1.1/CGAL-6.1.1.tar.xz
-        sha256: 52506935f70e247ed2777e3c65f20e86f79208c2a2d0e180ae7475daf11c96ef
+        url: https://github.com/CGAL/cgal/releases/download/v6.2/CGAL-6.2.tar.xz
+        sha256: fbc32816745e871a5cbdeb6245317e9dbf10ae1a957b0ab1edb00b4fde00ba8d
         x-checker-data:
           type: anitya
           project-id: 273
@@ -103,8 +103,8 @@ modules:
     builddir: true
     sources:
       - type: archive
-        url: https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2022.3.0.tar.gz
-        sha256: 01598a46c1162c27253a0de0236f520fd8ee8166e9ebb84a4243574f88e6e50a
+        url: https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2023.1.0.tar.gz
+        sha256: 191288b52e1e6b17198000b64d77d194bb65e791be46ebc606e9b091781e2070
         x-checker-data:
           type: anitya
           project-id: 8217

@@ -39,8 +39,8 @@ modules:
       - ./b2 install link=static runtime-link=static cxxflags="-fPIC" -j $FLATPAK_BUILDER_N_JOBS
     sources:
       - type: archive
-        url: https://archives.boost.io/release/1.91.0/source/boost_1_91_0.tar.bz2
-        sha256: de5e6b0e4913395c6bdfa90537febd9028ea4c0735d2cdb0cd9b45d5f51264f5
+        url: https://archives.boost.io/release/1.92.0/source/boost_1_92_0.tar.bz2
+        sha256: 5c1d40cb8e19adbf740a4ec2da35b3e58f3f5804b1dce44deb53df72193cbc6c
         x-checker-data:
           type: anitya
           project-id: 6845
@@ -57,8 +57,8 @@ modules:
       - /bin
     sources:
       - type: archive
-        url: https://github.com/CGAL/cgal/releases/download/v6.1.1/CGAL-6.1.1.tar.xz
-        sha256: 52506935f70e247ed2777e3c65f20e86f79208c2a2d0e180ae7475daf11c96ef
+        url: https://github.com/CGAL/cgal/releases/download/v6.2/CGAL-6.2.tar.xz
+        sha256: fbc32816745e871a5cbdeb6245317e9dbf10ae1a957b0ab1edb00b4fde00ba8d
         x-checker-data:
           type: anitya
           project-id: 273
@@ -103,8 +103,8 @@ modules:
     builddir: true
     sources:
       - type: archive
-        url: https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2022.3.0.tar.gz
-        sha256: 01598a46c1162c27253a0de0236f520fd8ee8166e9ebb84a4243574f88e6e50a
+        url: https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2023.1.0.tar.gz
+        sha256: 191288b52e1e6b17198000b64d77d194bb65e791be46ebc606e9b091781e2070
         x-checker-data:
           type: anitya
           project-id: 8217

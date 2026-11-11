@@ -45,7 +45,8 @@ modules:
           type: anitya
           project-id: 6845
           stable-only: true
-          url-template: https://archives.boost.io/release/$version/source/boost_${major}_${minor}_${patch}.tar.bz2
+          url-template: 
+            https://archives.boost.io/release/$version/source/boost_${major}_${minor}_${patch}.tar.bz2
 
   - name: CGAL
     buildsystem: cmake-ninja
@@ -57,8 +58,8 @@ modules:
       - /bin
     sources:
       - type: archive
-        url: https://github.com/CGAL/cgal/releases/download/v6.2/CGAL-6.2.tar.xz
-        sha256: fbc32816745e871a5cbdeb6245317e9dbf10ae1a957b0ab1edb00b4fde00ba8d
+        url: https://github.com/CGAL/cgal/releases/download/v6.2.1/CGAL-6.2.1.tar.xz
+        sha256: b6be77c60765a8456335de991eeaf6ffec55256984e4a9ecc6a97c37bbfe85bf
         x-checker-data:
           type: anitya
           project-id: 273
@@ -89,7 +90,8 @@ modules:
       - /bin
     sources:
       - type: archive
-        url: https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/lib3ds/lib3ds-1.3.0.zip
+        url: 
+          https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/lib3ds/lib3ds-1.3.0.zip
         sha256: f5b00c302955a67fa5fb1f2d3f2583767cdc61fdbc6fd843c0c7c9d95c5629e3
       - type: shell
         commands:
@@ -103,8 +105,8 @@ modules:
     builddir: true
     sources:
       - type: archive
-        url: https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2023.1.0.tar.gz
-        sha256: 191288b52e1e6b17198000b64d77d194bb65e791be46ebc606e9b091781e2070
+        url: https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2023.2.0.tar.gz
+        sha256: 80cb62e62defeee67ea1885a6f72d97ac81404f8fde9cded62fb51524808a30c
         x-checker-data:
           type: anitya
           project-id: 8217
